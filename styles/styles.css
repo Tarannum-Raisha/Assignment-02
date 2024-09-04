@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+ body{
+    background-color: black;
+    color: white;
+ }
+   *{
+    border: 1px solid yellow;
+  }
+  /* shared style  */
+   .display-flex{
+    display: flex;
+   }
+   p{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1rem;
+   }
+   .btn-primary{
+      padding: 16px 48px;
+      font-weight: 700;
+      font-size: 1.125rem;
+      background-color:#E6533C;
+      border-radius: 42px;
+      border: none;
+      color: white;
+   }
+   .btn-secondary{
+      padding: 16px 48px;
+      font-weight: 700;
+      font-size: 1.125rem;
+      background-color:black;
+      border: 1px solid white;
+      border-radius: 42px;
+      margin-left: 14px;
+      color: white;
+   }
+  /* nav styles */
+
+  .nav-head{
+   font-weight: 800;
+   font-size: 2.25rem;
+   color: #E6533C;
+
+}
+  .nav{
+    justify-content: space-between;
+  
+  }
+ .header{
+    max-width: 1100px;
+    margin: 0 auto;
+ }
+ .nav-item{
+    list-style: none;
+    font-size: 1rem;
+ }
+ .nav-items{
+    gap: 47px ;
+    align-items: center;
+ }
+ .nav-item a{
+    text-decoration: none;
+    color: white;
+ }
+ #home{
+    padding: 8px;
+    border-radius: 46px;
+    background-color: #E6533C;
+ }
+ /* header styles */
+ .header-title{
+   font-size: 4.875rem;
+   font-weight: 900;
+   margin-bottom: 0;
+ }
+ .header-content{
+   gap: 170px;
+ }
+ /* header box */
+ .header-box{
+    max-width: 200px;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+ /* #header-box-free{
+   margin-top: 200px;
+   margin-right: 200px;
+ } */
+ #header-box-gap{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
+   /* margin-top: -64px;
+   margin-right: -117px; */
+ }
+
+.free-video{
+   font-weight: 900;
+   font-size: 2.5rem;
+   margin-bottom: 0;
+}
+.ball-width{
+   max-width: 40px;
+   max-height: 40px;
+}
+.ball{
+   color: #E6533C;
+   background-color: #E6533C;
+   border: none;
+   border-radius: 50%;
+   padding:25%
+}
+.video-tutorial{
+   font-weight: 900;
+   font-size: 1.5rem;
+   margin-bottom: 0;
+ }
+ /* habit styles */
+ .habit{
+   max-width: 1050px;
+   margin: 0 auto;
+      text-align: center;
+
+ }
+   .habit-img-cards {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      text-align: center;
+      gap: 40px;
+   }
+   .card img{
+    border-radius: 50%;
+   }
+ 
+   .habit-title{
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 0;
+   }
+   .habit-description{
+      margin-bottom: 58px;
+   }
+   @media screen and (max-width:576px) {
+      .habit-img-cards {
+         grid-template-columns: repeat(1,1fr);
+          max-width: 230px;
+          margin: 0 auto;
+        
+      }
+      .habit-title{
+         font-size: 2.125rem;
+      }
+      .habit{
+         max-width: 320px;
+      }
+   }
